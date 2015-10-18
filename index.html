@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Live Polling</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+</head>
+<body>
+	<div id="content"></div>
+	<script type="text/babel">
+		var SelectionBox = React.createClass({
+			render: function() {
+				return(
+					<div className="selectionBox">
+						This is the selection box.
+					</div>
+				);
+			}
+		});
+		var ResultsTable = React.createClass({
+			render: function() {
+				return(
+					<div className="resultsTable">
+						This is the results table.
+					</div>
+				);
+			}
+		});
+		ReactDOM.render(
+			<SelectionBox />,
+			<ResultsTable />,
+			document.getElementById('content')
+		);
+	</script>
+</body>
+</html>
