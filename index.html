@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 	<title>Live Polling</title>
+	<link rel="stylesheet" href="css/base.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
-</head>
-<body>
+  </head>
+  <body>
 	<div id="content"></div>
 	<script type="text/babel">
-		var SelectionBox = React.createClass({
-			render: function() {
-				return(
-					<div className="selectionBox">
-						This is the selection box.
-					</div>
-				);
-			}
-		});
-		var ResultsTable = React.createClass({
-			render: function() {
-				return(
-					<div className="resultsTable">
-						This is the results table.
-					</div>
-				);
-			}
-		});
-		ReactDOM.render(
-			<SelectionBox />,
-			<ResultsTable />,
-			document.getElementById('content')
-		);
+	  var PageLayout = React.createClass({
+	  	render: function() {
+	  	  return(
+	  	  	<div className="pageLayout">
+	  	  	  <h1>Overall Page Layout</h1>
+	  	  	  <SelectionBox />
+	  	  	  <ResultsTable />
+	  	  	</div>
+	  	  );
+	  	}
+	  });
+	  var SelectionBox = React.createClass({
+		render: function() {
+		  return(
+			<div className="selectionBox">
+			  This is the selection box.
+			</div>
+		  );
+		}
+	  });
+	  var ResultsTable = React.createClass({
+		render: function() {
+		  return(
+			<div className="resultsTable">
+			  This is the results table.
+			</div>
+		  );
+		}
+	  });
+	  ReactDOM.render(
+		<PageLayout />,
+		document.getElementById('content')
+	  );
 	</script>
-</body>
+  </body>
 </html>
