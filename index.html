@@ -9,31 +9,11 @@
 	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
 </head>
 <body>
-	<div id="content"></div>
-	<script type="text/babel">
-		var SelectionBox = React.createClass({
-			render: function() {
-				return(
-					<div className="selectionBox">
-						This is the selection box.
-					</div>
-				);
-			}
-		});
-		var ResultsTable = React.createClass({
-			render: function() {
-				return(
-					<div className="resultsTable">
-						This is the results table.
-					</div>
-				);
-			}
-		});
-		ReactDOM.render(
-			<SelectionBox />,
-			<ResultsTable />,
-			document.getElementById('content')
-		);
-	</script>
+	<div id="content">
+		<div id="selection-box"></div>
+		<div id="results-table"></div>
+	</div>
+	<script type="text/babel" src="/Users/nickjames/personal/projects/thinkful_repos/polling_project/javascripts/results_table.js"></script>
+	<script type="text/babel" src="/Users/nickjames/personal/projects/thinkful_repos/polling_project/javascripts/selection_box.js"></script>
 </body>
 </html>
