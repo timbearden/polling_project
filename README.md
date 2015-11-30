@@ -25,4 +25,8 @@ Immediate next steps:
   - Create a graph database connection 
   - Use the neo4j connection to pass objects to the front end so as to render a few basic data points in the selection box.
   - Create a navbar component and style appropriately
-  
+
+
+Going to use these resources to make it happen:
+  http://neo4j.com/blog/building-python-web-application-using-flask-neo4j/
+  http://multithreaded.stitchfix.com/blog/2015/07/16/pyxley/ (for react integration and rendering of survey results in chart form)
