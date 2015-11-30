@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<title>Live Polling</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+</head>
+<body>
+	<div id="content">
+		<div id="selection-box"></div>
+		<div id="results-table"></div>
+	</div>
+	<script type="text/babel" src="{{ url_for('static', filename='javascripts/selection_box.js') }}"></script>
+</body>
+
+
+<!-- <html>
+	<head>
+		<title> Polling Site 1.0 </title>
+	</head>
+	<body>
+		<div> Hello, World! </div>
+		<a href="{{ url_for('poll') }}">Take a survey!</a>
+	</body>
+
+
+
+ </html>
+ -->
