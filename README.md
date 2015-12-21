@@ -25,6 +25,16 @@ Immediate next steps:
   - Create a graph database connection 
   - Use the neo4j connection to pass objects to the front end so as to render a few basic data points in the selection box.
   - Create a navbar component and style appropriately
+  - Scrape the web (espn.com or nba.com) for remainder of the NBA schedule
+  - Load the scraped data into neo4j
+    - Requires mapping the NBA schedule graph
+      - Nodes: 
+        - Teams
+          - Properties:
+            - City
+        - Games
+      - Relationships:
+        - Plays
 
 
 Going to use these resources to make it happen:

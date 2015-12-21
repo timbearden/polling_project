@@ -1,0 +1,28 @@
+{
+  "name": "polling_project",
+  "version": "1.0.0",
+  "description": "Website for polling competitions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timbearden/polling_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timbearden/polling_project/issues"
+  },
+  "homepage": "https://github.com/timbearden/polling_project#readme",
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^6.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "",
+    "gulp-size": "^1.2.1",
+    "reactify": "^1.0.0"
+  }
+}
