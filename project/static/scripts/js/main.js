@@ -1,58 +1,83 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-/** @jsx React.DOM */
+// var React = require('react');
+// var ReactDOM = require('reactify');
 
-var DynamicSearch = React.createClass({displayName: "DynamicSearch",
+var data = [{team1: "Golden State Warriors",
+              team2: "Cleveland Cavaliers",
+              winner: ""
+            },
+            { team1: "Los Angeles Lakers",
+              team2: "Los Angeles Clippers",
+              winner: ""
+            }]
 
-  // sets initial state
-  getInitialState: function(){
-    return { searchString: '' };
+var SurveyBox = React.createClass({displayName: "SurveyBox",
+  getInitialState: function() {
+    return { data: data }
   },
 
-  // sets state, triggers render method
-  handleChange: function(event){
-    // grab value form input box
-    this.setState({searchString:event.target.value});
-    console.log("scope updated!")
-  },
+  // loadSurveyQuestions: function() {
+  //   this.setState({data: data})
+  //     .bind(this);
+  // },
+  // componentDidMount: function() {
+  //   this.loadSurveyQuestions();
+  // },
+
+  // handleSurveyResponse: function() {
+  //
+  // },
 
   render: function() {
-
-    var countries = this.props.items;
-    var searchString = this.state.searchString.trim().toLowerCase();
-
-    // filter countries list by value from input box
-    if(searchString.length > 0){
-      countries = countries.filter(function(country){
-        return country.name.toLowerCase().match( searchString );
-      });
-    }
-
     return (
       React.createElement("div", null, 
-        React.createElement("input", {type: "text", value: this.state.searchString, onChange: this.handleChange, placeholder: "Search!"}), 
-        React.createElement("ul", null, 
-           countries.map(function(country){ return React.createElement("li", null, country.name, " ") }) 
-        )
+        React.createElement(Survey, {data: this.state.data})
       )
     )
   }
-
 });
 
-// list of countries, defined with JavaScript object literals
-var countries = [
-  {"name": "Sweden"}, {"name": "China"}, {"name": "Peru"}, {"name": "Czech Republic"},
-  {"name": "Bolivia"}, {"name": "Latvia"}, {"name": "Samoa"}, {"name": "Armenia"},
-  {"name": "Greenland"}, {"name": "Cuba"}, {"name": "Western Sahara"}, {"name": "Ethiopia"},
-  {"name": "Malaysia"}, {"name": "Argentina"}, {"name": "Uganda"}, {"name": "Chile"},
-  {"name": "Aruba"}, {"name": "Japan"}, {"name": "Trinidad and Tobago"}, {"name": "Italy"},
-  {"name": "Cambodia"}, {"name": "Iceland"}, {"name": "Dominican Republic"}, {"name": "Turkey"},
-  {"name": "Spain"}, {"name": "Poland"}, {"name": "Haiti"}
-];
+
+var Survey = React.createClass({displayName: "Survey",
+  // handleSubmit: function() {
+  //
+  // },
+
+  render: function() {
+    var games = this.props.data;
+    var questionsArray = games.map(function(game, idx) {
+      return (
+        React.createElement(Question, {key:  idx, team1:  game.team1, team2:  game.team2})
+        );
+      })
+
+    return (
+      React.createElement("form", null, 
+        questionsArray, 
+        React.createElement("button", null, "Submit Picks")
+      )
+
+    );
+  }
+});
+
+var Question = React.createClass({displayName: "Question",
+
+  render: function() {
+      return (
+        React.createElement("div", null, 
+          React.createElement("input", {type: "radio", name: this.props.team1, value: this.props.team1}, this.props.team1), 
+           React.createElement("p", null, React.createElement("i", null, "vs")), 
+           React.createElement("input", {type: "radio", name: this.props.team1, value: this.props.team2}, this.props.team2)
+        )
+      );
+  }
+});
+
 
 React.render(
-  React.createElement(DynamicSearch, {items:  countries }),
-  document.getElementById('main')
+  React.createElement(SurveyBox, null),
+  document.getElementById("poll")
 );
 
 
