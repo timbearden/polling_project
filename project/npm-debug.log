@@ -1,0 +1,367 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'react-radio' ]
+2 info using npm@2.14.0
+3 info using node@v0.12.0
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/nickjames/personal/Projects/polling_project/package.json
+6 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/babel-preset-es2015/package.json
+7 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/bower/package.json
+8 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp/package.json
+9 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-babel/package.json
+10 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-browserify/package.json
+11 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-clean/package.json
+12 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-rimraf/package.json
+13 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-size/package.json
+14 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/react/package.json
+15 verbose installManyTop reading scoped package data from /Users/nickjames/personal/Projects/polling_project/node_modules/reactify/package.json
+16 info package.json gulp-clean@0.3.1 No license field.
+17 verbose readDependencies loading dependencies from /Users/nickjames/personal/Projects/polling_project/package.json
+18 silly cache add args [ 'react-radio', null ]
+19 verbose cache add spec react-radio
+20 silly cache add parsed spec { raw: 'react-radio',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'react-radio',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: '*',
+20 silly cache add   type: 'range' }
+21 silly addNamed react-radio@*
+22 verbose addNamed "*" is a valid semver range for react-radio
+23 silly addNameRange { name: 'react-radio', range: '*', hasData: false }
+24 silly mapToRegistry name react-radio
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/react-radio
+28 verbose addNameRange registry:https://registry.npmjs.org/react-radio not in flight; fetching
+29 verbose request uri https://registry.npmjs.org/react-radio
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 22:01:35
+32 verbose request id 75c4553a8518ac31
+33 http request GET https://registry.npmjs.org/react-radio
+34 http 200 https://registry.npmjs.org/react-radio
+35 silly get cb [ 200,
+35 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+35 silly get     etag: '"7TMIZ900FYADS1FJYGJOZW1JE"',
+35 silly get     'content-type': 'application/json',
+35 silly get     'cache-control': 'max-age=300',
+35 silly get     'content-length': '23337',
+35 silly get     'accept-ranges': 'bytes',
+35 silly get     date: 'Wed, 23 Dec 2015 06:01:36 GMT',
+35 silly get     via: '1.1 varnish',
+35 silly get     age: '67',
+35 silly get     connection: 'keep-alive',
+35 silly get     'x-served-by': 'cache-lax1429-LAX',
+35 silly get     'x-cache': 'HIT',
+35 silly get     'x-cache-hits': '1',
+35 silly get     'x-timer': 'S1450850496.589889,VS0,VE0',
+35 silly get     vary: 'Accept' } ]
+36 verbose get saving react-radio to /Users/nickjames/.npm/registry.npmjs.org/react-radio/.cache.json
+37 silly addNameRange number 2 { name: 'react-radio', range: '*', hasData: true }
+38 silly addNameRange versions [ 'react-radio',
+38 silly addNameRange   [ '0.1.0',
+38 silly addNameRange     '1.0.0',
+38 silly addNameRange     '1.0.1',
+38 silly addNameRange     '1.0.2',
+38 silly addNameRange     '1.0.3',
+38 silly addNameRange     '1.0.4',
+38 silly addNameRange     '1.0.5',
+38 silly addNameRange     '1.0.6',
+38 silly addNameRange     '1.0.7',
+38 silly addNameRange     '1.0.8' ] ]
+39 silly addNamed react-radio@1.0.8
+40 verbose addNamed "1.0.8" is a plain semver version for react-radio
+41 silly mapToRegistry name react-radio
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/react-radio
+45 verbose addRemoteTarball https://registry.npmjs.org/react-radio/-/react-radio-1.0.8.tgz not in flight; adding
+46 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-radio/-/react-radio-1.0.8.tgz',
+46 verbose addRemoteTarball   '6c794f4b56ef55766c946b6f9133810b9181852f' ]
+47 info retry fetch attempt 1 at 22:01:36
+48 info attempt registry request try #1 at 22:01:36
+49 http fetch GET https://registry.npmjs.org/react-radio/-/react-radio-1.0.8.tgz
+50 http fetch 200 https://registry.npmjs.org/react-radio/-/react-radio-1.0.8.tgz
+51 silly fetchAndShaCheck shasum 6c794f4b56ef55766c946b6f9133810b9181852f
+52 verbose addTmpTarball /var/folders/3d/r7y_76qn6b9b6_d9f6kzsl7h0000gq/T/npm-12749-b4e33329/registry.npmjs.org/react-radio/-/react-radio-1.0.8.tgz not in flight; adding
+53 verbose addTmpTarball already have metadata; skipping unpack for react-radio@1.0.8
+54 silly cache afterAdd react-radio@1.0.8
+55 verbose afterAdd /Users/nickjames/.npm/react-radio/1.0.8/package/package.json not in flight; writing
+56 verbose afterAdd /Users/nickjames/.npm/react-radio/1.0.8/package/package.json written
+57 silly install resolved [ { name: 'react-radio',
+57 silly install resolved     version: '1.0.8',
+57 silly install resolved     description: 'React RadioGroup',
+57 silly install resolved     main: 'lib/index.js',
+57 silly install resolved     scripts:
+57 silly install resolved      { test: 'make',
+57 silly install resolved        lib: 'gulp',
+57 silly install resolved        'build-style': 'webpack --progress --colors --config build-style.config.js',
+57 silly install resolved        dist: 'webpack --progress --colors --config dist.config.js',
+57 silly install resolved        'dist.min': 'webpack --progress --colors --optimize-minimize --optimize-occurence-order --optimize-dedupe --config dist.min.config.js',
+57 silly install resolved        build: 'npm run lib && npm run dist && npm run dist.min && npm run build-style',
+57 silly install resolved        serve: 'http-server -p 9091',
+57 silly install resolved        dev: 'webpack-dev-server --progress --colors --port 9090 --content-base http://localhost:9091' },
+57 silly install resolved     devDependencies:
+57 silly install resolved      { 'css-loader': '^0.9.0',
+57 silly install resolved        'extract-text-webpack-plugin': '^0.3.5',
+57 silly install resolved        gulp: '^3.8.11',
+57 silly install resolved        'gulp-react': '^3.0.1',
+57 silly install resolved        'http-server': '^0.7.3',
+57 silly install resolved        'jsx-loader': '^0.12.2',
+57 silly install resolved        'style-loader': '^0.8.2',
+57 silly install resolved        'stylus-loader': '^0.4.0',
+57 silly install resolved        webpack: '^1.4.13',
+57 silly install resolved        'webpack-dev-server': '^1.6.6' },
+57 silly install resolved     dependencies: { 'object-assign': '^2.0.0' },
+57 silly install resolved     peerDependencies: { react: '>=0.13.0' },
+57 silly install resolved     repository:
+57 silly install resolved      { type: 'git',
+57 silly install resolved        url: 'git+https://github.com/zippyui/react-radio.git' },
+57 silly install resolved     keywords: [ 'radio', 'input', 'radio-group', 'react', 'react-component' ],
+57 silly install resolved     author: { name: 'ZippyUI', email: 'contact@zippyui.com' },
+57 silly install resolved     contributors: [],
+57 silly install resolved     license: 'MIT',
+57 silly install resolved     bugs: { url: 'https://github.com/zippyui/react-radio/issues' },
+57 silly install resolved     homepage: 'https://github.com/zippyui/react-radio',
+57 silly install resolved     gitHead: '86be2ad25c1679aba54d6127b6e7ddb9c1decdb5',
+57 silly install resolved     _id: 'react-radio@1.0.8',
+57 silly install resolved     _shasum: '6c794f4b56ef55766c946b6f9133810b9181852f',
+57 silly install resolved     _from: 'react-radio@*',
+57 silly install resolved     _npmVersion: '2.14.7',
+57 silly install resolved     _nodeVersion: '4.2.1',
+57 silly install resolved     _npmUser: { name: 'zippyui', email: 'contact@zippyui.com' },
+57 silly install resolved     dist:
+57 silly install resolved      { shasum: '6c794f4b56ef55766c946b6f9133810b9181852f',
+57 silly install resolved        tarball: 'http://registry.npmjs.org/react-radio/-/react-radio-1.0.8.tgz' },
+57 silly install resolved     maintainers: [ [Object] ],
+57 silly install resolved     directories: {},
+57 silly install resolved     _resolved: 'https://registry.npmjs.org/react-radio/-/react-radio-1.0.8.tgz' } ]
+58 info install react-radio@1.0.8 into /Users/nickjames/personal/Projects/polling_project
+59 info installOne react-radio@1.0.8
+60 verbose installOne of react-radio to /Users/nickjames/personal/Projects/polling_project not in flight; installing
+61 verbose lock using /Users/nickjames/.npm/_locks/react-radio-bd67992d318882f3.lock for /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+62 silly install write writing react-radio 1.0.8 to /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+63 verbose unbuild node_modules/react-radio
+64 silly gentlyRm /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio is being purged from base /Users/nickjames/personal/Projects/polling_project
+65 verbose gentlyRm don't care about contents; nuking /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+66 verbose tar unpack /Users/nickjames/.npm/react-radio/1.0.8/package.tgz
+67 verbose tar unpacking to /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+68 silly gentlyRm /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio is being purged
+69 verbose gentlyRm don't care about contents; nuking /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+70 silly gunzTarPerm modes [ '755', '644' ]
+71 silly gunzTarPerm extractEntry package.json
+72 silly gunzTarPerm extractEntry .npmignore
+73 silly gunzTarPerm extractEntry README.md
+74 silly gunzTarPerm extractEntry LICENSE
+75 silly gunzTarPerm extractEntry webpack.config.js
+76 silly gunzTarPerm extractEntry Gulpfile.js
+77 silly gunzTarPerm extractEntry build-style.config.js
+78 silly gunzTarPerm extractEntry dist.config.js
+79 silly gunzTarPerm extractEntry dist.min.config.js
+80 silly gunzTarPerm extractEntry loaders.config.js
+81 silly gunzTarPerm extractEntry index-no-normalize.css
+82 silly gunzTarPerm extractEntry dist/react-radio-group.js
+83 silly gunzTarPerm extractEntry dist/react-radio-group.min.js
+84 silly gunzTarPerm extractEntry index.html
+85 silly gunzTarPerm extractEntry index.jsx
+86 silly gunzTarPerm extractEntry index.styl
+87 silly gunzTarPerm extractEntry lib/index.js
+88 silly gunzTarPerm extractEntry style/index.styl
+89 silly gunzTarPerm extractEntry CHANGELOG.md
+90 silly gunzTarPerm extractEntry src/index.jsx
+91 silly gunzTarPerm extractEntry index.css
+92 verbose write writing to /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/package.json
+93 info preinstall react-radio@1.0.8
+94 verbose readDependencies loading dependencies from /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/package.json
+95 silly prepareForInstallMany adding object-assign@^2.0.0 from react-radio dependencies
+96 silly prepareForInstallMany adding react@>=0.13.0 from react-radio peerDependencies
+97 warn peerDependencies The peer dependency react@>=0.13.0 included from react-radio will no
+98 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+99 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+100 verbose readDependencies loading dependencies from /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/package.json
+101 silly cache add args [ 'object-assign@^2.0.0', null ]
+102 verbose cache add spec object-assign@^2.0.0
+103 silly cache add parsed spec { raw: 'object-assign@^2.0.0',
+103 silly cache add   scope: null,
+103 silly cache add   name: 'object-assign',
+103 silly cache add   rawSpec: '^2.0.0',
+103 silly cache add   spec: '>=2.0.0 <3.0.0',
+103 silly cache add   type: 'range' }
+104 silly addNamed object-assign@>=2.0.0 <3.0.0
+105 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for object-assign
+106 silly addNameRange { name: 'object-assign',
+106 silly addNameRange   range: '>=2.0.0 <3.0.0',
+106 silly addNameRange   hasData: false }
+107 silly mapToRegistry name object-assign
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+111 verbose addNameRange registry:https://registry.npmjs.org/object-assign not in flight; fetching
+112 verbose request uri https://registry.npmjs.org/object-assign
+113 verbose request no auth needed
+114 info attempt registry request try #1 at 22:01:36
+115 verbose etag "9X5J81STMG1EY3P0PGJF4S0A2"
+116 http request GET https://registry.npmjs.org/object-assign
+117 http 304 https://registry.npmjs.org/object-assign
+118 silly get cb [ 304,
+118 silly get   { date: 'Wed, 23 Dec 2015 06:01:37 GMT',
+118 silly get     via: '1.1 varnish',
+118 silly get     'cache-control': 'max-age=60',
+118 silly get     etag: '"9X5J81STMG1EY3P0PGJF4S0A2"',
+118 silly get     age: '58',
+118 silly get     connection: 'keep-alive',
+118 silly get     'x-served-by': 'cache-lax1432-LAX',
+118 silly get     'x-cache': 'HIT',
+118 silly get     'x-cache-hits': '3',
+118 silly get     'x-timer': 'S1450850497.143424,VS0,VE0',
+118 silly get     vary: 'Accept' } ]
+119 verbose etag https://registry.npmjs.org/object-assign from cache
+120 verbose get saving object-assign to /Users/nickjames/.npm/registry.npmjs.org/object-assign/.cache.json
+121 silly addNameRange number 2 { name: 'object-assign', range: '>=2.0.0 <3.0.0', hasData: true }
+122 silly addNameRange versions [ 'object-assign',
+122 silly addNameRange   [ '0.1.0',
+122 silly addNameRange     '0.1.1',
+122 silly addNameRange     '0.1.2',
+122 silly addNameRange     '0.2.0',
+122 silly addNameRange     '0.2.1',
+122 silly addNameRange     '0.2.2',
+122 silly addNameRange     '0.3.0',
+122 silly addNameRange     '0.3.1',
+122 silly addNameRange     '0.4.0',
+122 silly addNameRange     '1.0.0',
+122 silly addNameRange     '2.0.0',
+122 silly addNameRange     '3.0.0',
+122 silly addNameRange     '2.1.1',
+122 silly addNameRange     '4.0.0',
+122 silly addNameRange     '4.0.1' ] ]
+123 silly addNamed object-assign@2.1.1
+124 verbose addNamed "2.1.1" is a plain semver version for object-assign
+125 silly cache afterAdd object-assign@2.1.1
+126 verbose afterAdd /Users/nickjames/.npm/object-assign/2.1.1/package/package.json not in flight; writing
+127 verbose afterAdd /Users/nickjames/.npm/object-assign/2.1.1/package/package.json written
+128 silly install resolved [ { name: 'object-assign',
+128 silly install resolved     version: '2.1.1',
+128 silly install resolved     description: 'ES6 Object.assign() ponyfill',
+128 silly install resolved     license: 'MIT',
+128 silly install resolved     repository:
+128 silly install resolved      { type: 'git',
+128 silly install resolved        url: 'git+https://github.com/sindresorhus/object-assign.git' },
+128 silly install resolved     author:
+128 silly install resolved      { name: 'Sindre Sorhus',
+128 silly install resolved        email: 'sindresorhus@gmail.com',
+128 silly install resolved        url: 'http://sindresorhus.com' },
+128 silly install resolved     engines: { node: '>=0.10.0' },
+128 silly install resolved     scripts: { test: 'mocha' },
+128 silly install resolved     files: [ 'index.js' ],
+128 silly install resolved     keywords:
+128 silly install resolved      [ 'object',
+128 silly install resolved        'assign',
+128 silly install resolved        'extend',
+128 silly install resolved        'properties',
+128 silly install resolved        'es6',
+128 silly install resolved        'ecmascript',
+128 silly install resolved        'harmony',
+128 silly install resolved        'ponyfill',
+128 silly install resolved        'prollyfill',
+128 silly install resolved        'polyfill',
+128 silly install resolved        'shim',
+128 silly install resolved        'browser' ],
+128 silly install resolved     devDependencies: { mocha: '*' },
+128 silly install resolved     gitHead: '4cd0365f5a78dd369473ca0bbd31f7b234148c42',
+128 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/object-assign/issues' },
+128 silly install resolved     homepage: 'https://github.com/sindresorhus/object-assign',
+128 silly install resolved     _id: 'object-assign@2.1.1',
+128 silly install resolved     _shasum: '43c36e5d569ff8e4816c4efa8be02d26967c18aa',
+128 silly install resolved     _from: 'object-assign@>=2.0.0 <3.0.0',
+128 silly install resolved     _npmVersion: '2.10.1',
+128 silly install resolved     _nodeVersion: '0.12.4',
+128 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+128 silly install resolved     dist:
+128 silly install resolved      { shasum: '43c36e5d569ff8e4816c4efa8be02d26967c18aa',
+128 silly install resolved        tarball: 'http://registry.npmjs.org/object-assign/-/object-assign-2.1.1.tgz' },
+128 silly install resolved     maintainers: [ [Object] ],
+128 silly install resolved     directories: {},
+128 silly install resolved     _resolved: 'https://registry.npmjs.org/object-assign/-/object-assign-2.1.1.tgz',
+128 silly install resolved     readme: 'ERROR: No README data found!' } ]
+129 info install object-assign@2.1.1 into /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+130 info installOne object-assign@2.1.1
+131 verbose installOne of object-assign to /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio not in flight; installing
+132 verbose lock using /Users/nickjames/.npm/_locks/object-assign-4ad3f1a5d70f5792.lock for /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign
+133 silly install write writing object-assign 2.1.1 to /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign
+134 verbose unbuild node_modules/react-radio/node_modules/object-assign
+135 silly gentlyRm /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign is being purged from base /Users/nickjames/personal/Projects/polling_project
+136 verbose gentlyRm don't care about contents; nuking /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign
+137 verbose tar unpack /Users/nickjames/.npm/object-assign/2.1.1/package.tgz
+138 verbose tar unpacking to /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign
+139 silly gentlyRm /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign is being purged
+140 verbose gentlyRm don't care about contents; nuking /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign
+141 silly gunzTarPerm modes [ '755', '644' ]
+142 silly gunzTarPerm extractEntry package.json
+143 silly gunzTarPerm extractEntry index.js
+144 silly gunzTarPerm extractEntry license
+145 silly gunzTarPerm extractEntry readme.md
+146 verbose write writing to /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign/package.json
+147 info preinstall object-assign@2.1.1
+148 verbose readDependencies loading dependencies from /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign/package.json
+149 verbose readDependencies loading dependencies from /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign/package.json
+150 silly install resolved []
+151 verbose about to build /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign
+152 info build /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign
+153 info linkStuff object-assign@2.1.1
+154 silly linkStuff object-assign@2.1.1 has /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules as its parent node_modules
+155 verbose linkBins object-assign@2.1.1
+156 verbose linkMans object-assign@2.1.1
+157 verbose rebuildBundles object-assign@2.1.1
+158 info install object-assign@2.1.1
+159 info postinstall object-assign@2.1.1
+160 verbose unlock done using /Users/nickjames/.npm/_locks/object-assign-4ad3f1a5d70f5792.lock for /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/node_modules/object-assign
+161 verbose about to build /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+162 info build /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+163 info linkStuff react-radio@1.0.8
+164 silly linkStuff react-radio@1.0.8 has /Users/nickjames/personal/Projects/polling_project/node_modules as its parent node_modules
+165 verbose linkBins react-radio@1.0.8
+166 verbose linkMans react-radio@1.0.8
+167 verbose rebuildBundles react-radio@1.0.8
+168 verbose rebuildBundles [ 'object-assign' ]
+169 info install react-radio@1.0.8
+170 info postinstall react-radio@1.0.8
+171 verbose readDependencies loading dependencies from /Users/nickjames/personal/Projects/polling_project/package.json
+172 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/babel-preset-es2015/package.json
+173 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/bower/package.json
+174 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp/package.json
+175 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-babel/package.json
+176 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-browserify/package.json
+177 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-clean/package.json
+178 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-rimraf/package.json
+179 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/gulp-size/package.json
+180 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/react/package.json
+181 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio/package.json
+182 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/reactify/package.json
+183 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/.bin/bower/package.json
+184 verbose targetResolver reading package data from /Users/nickjames/personal/Projects/polling_project/node_modules/.bin/gulp/package.json
+185 verbose already installed skipping react@>=0.13.0 /Users/nickjames/personal/Projects/polling_project
+186 silly install resolved []
+187 verbose unlock done using /Users/nickjames/.npm/_locks/react-radio-bd67992d318882f3.lock for /Users/nickjames/personal/Projects/polling_project/node_modules/react-radio
+188 verbose validateInstall loading /Users/nickjames/personal/Projects/polling_project/package.json for validation
+189 verbose stack Error: The package react@0.12.2 does not satisfy its siblings' peerDependencies requirements!
+189 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+189 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+189 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+189 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+189 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+189 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+189 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+189 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+189 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+189 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+190 verbose cwd /Users/nickjames/personal/Projects/polling_project/project
+191 error Darwin 15.2.0
+192 error argv "node" "/usr/local/bin/npm" "install" "--save-dev" "react-radio"
+193 error node v0.12.0
+194 error npm  v2.14.0
+195 error code EPEERINVALID
+196 error peerinvalid The package react@0.12.2 does not satisfy its siblings' peerDependencies requirements!
+196 error peerinvalid Peer react-radio@1.0.8 wants react@>=0.13.0
+197 verbose exit [ 1, true ]
