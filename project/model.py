@@ -22,7 +22,7 @@ class User:
       return True
     else:
       return False
-  
+
   def verify_password(self.password):
     user = self.find()
     if user:
@@ -47,6 +47,19 @@ class User:
     graph.create(rel)
 
 
-class Poll: 
+
+class Survey:
+  '''
+  Container class for questions; id will be passed as a prop to questions for
+  '''
   def __init__(self):
 
+class Question:
+  '''
+  Baseclass for all questions; properties will determine the type of form input/response data format
+  Subclass properties will determine input types, fields
+  '''
+#NBA game specific entities
+class Game:
+
+class Team:

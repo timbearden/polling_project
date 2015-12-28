@@ -1,5 +1,4 @@
-// var React = require('react');
-// var ReactDOM = require('reactify');
+var React = require('react');
 
 var data = [{team1: "Golden State Warriors",
               team2: "Cleveland Cavaliers",
@@ -73,8 +72,68 @@ var Question = React.createClass({
   }
 });
 
+var elements = [{text: "Sign In",
+  url: ""},
+ {text: "Categories",
+  url: "",
+  submenu: [{text: "Sports",
+      url: ""},
+      {text: "Politics",
+      url: ""},
+      {text: "Weather",
+      url: ""}]}]
+
+var NavBar = React.createClass({
+  generateElement: function(element) {
+    return <NavBarElement text={element.text} url={element.url} submenu={element.submenu} />
+  },
+
+  render: function() {
+    var NavBarElementArray = this.props.elements.map(this.generateElement);
+    return(
+      <ul className="menu">
+        {NavBarElementArray}
+      </ul>
+    );
+  }
+})
+
+var NavBarElement = React.createClass({
+  generateLink: function() {
+    return <NavBarLink link={this.props.url} text={this.props.text} />;
+  },
+
+  generateContent: function() {
+    var content = [this.generateLink()];
+    if(this.props.submenu){
+      content.push(this.generateSubmenu());
+    }
+    return content;
+  },
+
+  generateSubmenu: function() {
+    return <NavBar elements={this.props.submenu} />
+  },
+
+  render: function() {
+    var content = this.generateContent();
+    return(
+      <li>{content}</li>
+    );
+  }
+})
+
+var NavBarLink = React.createClass({
+  render: function() {
+    return(
+      <a href={this.props.url}>{this.props.text}</a>
+    )
+  }
+})
+
 
 React.render(
-  <SurveyBox />,
-  document.getElementById("poll")
+  <NavBar elements={elements} />,
+  document.getElementById('header_nav')
 );
+React.render(<SurveyBox />, document.getElementById("poll"));
